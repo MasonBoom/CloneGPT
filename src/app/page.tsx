@@ -3,7 +3,7 @@ import React from "react";
 function HomePage() {
   return (
     <div>
-      <h1>ChatGPT Remake</h1>
+      <h1>CloneGPT</h1>
     </div>
   )
 }

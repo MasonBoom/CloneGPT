@@ -4,8 +4,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'ChatGPT 2.0',
-  description: 'A remake of the original ChatGPT.',
+  title: 'CloneGPT',
+  description: 'An unofficial remake of ChatGPT.',
 }
 
 export default function RootLayout({
@@ -15,7 +15,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head />
+      <body className={inter.className}>
+        <div>
+          {/* Sidebar */}
+          {/* ClientProvider - Notification */}
+          <div className="bg-[#343541] flex-1">{children}</div>
+        </div>
+      </body>
     </html>
   )
 }
